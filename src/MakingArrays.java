@@ -1,5 +1,6 @@
 public class MakingArrays {
-    int [] Carti = new int [10];
+    public int Carti[] = new int [(int)(100*Math.random())];
+    public double total;
     public static void main(String[] args) {
         System.out.println("Hello world!");
         MakingArrays make = new MakingArrays();
@@ -12,34 +13,22 @@ public class MakingArrays {
         System.out.println("bububu");
         System.out.println("polannd");
         System.out.println("Carti");
-        Carti[0] = 5;
-        Carti[1] = 10;
-        Carti[2] = Carti[1]*3;
-        Carti[3] = 17;
-        Carti[4] = 24;
-        Carti[5] = 3;
-        Carti[6] = 4;
-        Carti[7] = 14;
-        Carti[8] = 26;
-        Carti[9] = 16;
-
-
-
-
-
+        for (int x=0; x<Carti.length; x++){
+            Carti[x] = (int)(100*Math.random());
+        }
 
         printArray();
     }
     public void printArray(){
-        System.out.println(Carti[0]);
-        System.out.println(Carti[1]);
-        System.out.println(Carti[2]);
-        System.out.println(Carti[3]);
-        System.out.println(Carti[4]);
-        System.out.println(Carti[5]);
-        System.out.println(Carti[6]);
-        System.out.println(Carti[7]);
-        System.out.println(Carti[8]);
-        System.out.println(Carti[9]);
+
+        for(int x=0; x < Carti.length; x=x+1){
+            System.out.println(Carti[x]);
+        }
+        for(int x=0; x < Carti.length; x=x+1){
+            total = total + Carti[x];
+        }
+        System.out.println("The total is " + total);
+        System.out.println("The average is " + total/Carti.length);
+
     }
 }

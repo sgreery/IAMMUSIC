@@ -7,6 +7,7 @@ public class MakingArrays {
 
     }
 
+
     public MakingArrays(){
         System.out.println("seeyuh");//Message
         System.out.println("fwaeh");//Message

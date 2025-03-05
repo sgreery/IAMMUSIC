@@ -5,8 +5,12 @@ public class ArraysObjects {
     Pizza[] kat = new Pizza [10];
     public ArraysObjects(){
         Pizza s = new Pizza(12.99);
-        kat[0] = s;
-        kat[0].printInfo();
+        for(int x = 0; x<10; x++){
+            kat[x]=s;
+            kat[x].printInfo();
+        }
+
+
         System.out.println("Making arrays with objects!");
     }
 }

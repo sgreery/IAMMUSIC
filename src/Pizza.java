@@ -16,8 +16,8 @@ public class Pizza {
     public void printInfo(){
         System.out.println("The price is: " + price);
         System.out.println("The type of pizza is " + type);
-        System.out.println("The number of slices is"+size);
-        System.out.println("The main ingredient is"+ingredient);
+        System.out.println("The number of slices is "+size);
+        System.out.println("The main ingredient is "+ingredient);
         System.out.println("The fact that the pizza is hot is "+isHot);
     }
 }

@@ -12,6 +12,7 @@ public class ArraysObjects {
         kat[1] = s1;
         changeSizes();
         printArray();
+        totalPizzaSlices();
 
 
         System.out.println("Making arrays with objects!");
@@ -25,5 +26,12 @@ public class ArraysObjects {
         for(int x = 0; x<kat.length; x++){
             kat[x].size = (int) (Math.random() * 10) + 10;
         }
+    }
+    public void totalPizzaSlices(){
+        int j = 0;
+        for(int x = 0; x<kat.length; x++){
+            j=j+kat[x].size;
+        }
+        System.out.println("Total slices: " + j);
     }
 }

@@ -13,6 +13,7 @@ public class ArraysObjects {
         changeSizes();
         printArray();
         totalPizzaSlices();
+        biggestPizzaOrder();
 
 
         System.out.println("Making arrays with objects!");
@@ -28,10 +29,19 @@ public class ArraysObjects {
         }
     }
     public void totalPizzaSlices(){
-        int j = 0;
+        int sum = 0;
         for(int x = 0; x<kat.length; x++){
-            j=j+kat[x].size;
+            sum = sum +kat[x].size;
         }
-        System.out.println("Total slices: " + j);
+        System.out.println("Total slices: " + sum);
+    }
+    public void biggestPizzaOrder(){
+        int biggestOrder = 0;
+        for(int x = 0; x<kat.length; x++){
+            if(kat[x].size>biggestOrder){
+                biggestOrder = kat[x].size;
+            }
+        }
+        System.out.println("The most ordered slices is: " + biggestOrder);
     }
 }
